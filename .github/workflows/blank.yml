@@ -1,0 +1,16 @@
+# name of workflow
+name: Greeting Chelsea
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  greet-chelsea:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2 #name of the action
+      - name: I am greeting Chelsea Cherono
+        run: echo Hello Chelsea Cheromo
+        
+    
